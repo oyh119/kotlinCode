@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="300dp">
+    <FrameLayout
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:layout_height="20dp"
+            android:includeFontPadding="false"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:text="@string/waiter_method_tips" />
+        <TextView
+            android:gravity="center"
+            android:id="@+id/txt_method_price"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+    <ScrollView
+        android:id="@+id/rcy_method"
+        android:layout_weight="1"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/box_method"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:flexWrap="wrap"
+            app:justifyContent="space_between"
+            >
+
+
+        </com.google.android.flexbox.FlexboxLayout>
+    </ScrollView>
+
+
+    <FrameLayout
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="34dp">
+        <TextView
+            android:id="@+id/txt_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/txt_vip_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"/>
+    </FrameLayout>
+</LinearLayout>

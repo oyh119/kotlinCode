@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    tools:context=".business.table.PersonNumDialogFragment">
+    <TextView
+        android:id="@+id/txt_title"
+        android:textSize="26sp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="请选择就餐人数"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp" />
+    <EditText
+        android:layout_below="@+id/txt_title"
+        android:id="@+id/txt_person_num"
+        android:inputType="number"
+        android:maxLength="5"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:text="3"
+        android:layout_toLeftOf="@+id/txt_unit"
+        android:textSize="28sp"
+        android:gravity="right|center_vertical"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" />
+    <TextView
+        android:id="@+id/txt_unit"
+        android:text="人"
+        android:layout_alignParentEnd="true"
+        android:textSize="32sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txt_title"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/txt_person_num"
+        android:id="@+id/rcy_num"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"/>
+
+    <LinearLayout
+        android:layout_below="@+id/rcy_num"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <Button
+            android:id="@+id/btnClose"
+            android:text="@string/close"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/btnOk"
+            android:text="@string/ok"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

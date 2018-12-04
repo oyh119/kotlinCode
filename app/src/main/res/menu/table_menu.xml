@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="cn.mealkey.mkservice.business.table.RegionActivity">
+    <item
+        android:id="@+id/item_msg"
+        android:title="@string/msg"
+        android:icon="@drawable/ic_msg"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/item_menu"
+        android:title="@string/menu"
+        android:icon="@drawable/ic_menu"
+        app:showAsAction="always"/>
+</menu>
